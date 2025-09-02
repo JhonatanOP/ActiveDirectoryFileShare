@@ -18,7 +18,7 @@ The lab uses a Windows Server VM as a domain controller and file server. Two org
 
 * **Windows Server** – domain controller and file server.
 * **Active Directory Users and Computers (ADUC)** – to create OUs, users and groups.
-* **Group Policy Management Editor** – to enforce security policies. Group Policy Objects allow administrators to centrally manage user and computer environments and ensure consistent security settings【789323450487467†L59-L68】.
+* **Group Policy Management Editor** – to enforce security policies. Group Policy Objects allow administrators to centrally manage user and computer environments and ensure consistent security settings.
 * **Windows File Explorer** – to create shared folders and set NTFS permissions.
 
 ## Steps
@@ -27,7 +27,7 @@ The lab uses a Windows Server VM as a domain controller and file server. Two org
 
 2. **Create Organizational Units (OUs) and Users.** Use ADUC to create OUs such as Finance and Sales. Add user accounts (`finance_user1`, `sales_user1`, etc.) and security groups to each OU.
 
-3. **Configure a Network File Share.** On the server, create a folder (e.g., `\\FS01\CorpData`). Configure share permissions so that only domain users can access it. Then set NTFS permissions to assign specific rights (Read, Modify, Full Control). NTFS permissions determine what users can do with files and folders, such as reading, writing or deleting them【388870359900431†L53-L62】【388870359900431†L96-L108】.
+3. **Configure a Network File Share.** On the server, create a folder (e.g., `\\FS01\CorpData`). Configure share permissions so that only domain users can access it. Then set NTFS permissions to assign specific rights (Read, Modify, Full Control). NTFS permissions determine what users can do with files and folders, such as reading, writing or deleting them.
 
 4. **Implement Group Policies.** Use Group Policy Management to create GPOs enforcing security policies. For example, set a password complexity and length policy, configure desktop settings for each OU, or map the shared folder as a network drive. Link the GPOs to the appropriate OUs.
 
